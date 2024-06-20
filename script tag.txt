@@ -1,0 +1,12 @@
+// example 
+<script type="text/javascript src="filename">
+.document.write("Hello");
+</script>
+.-><script>-> Opening Tag
+.->src -> it's an attributes of script tag . it define source/location of script file.
+.-> filename.js -> This is our script file. where filename is file name and .js is the extension 
+of javascript file.
+.-> type -> it's attributes of script tag which tells the browser it is a javascript. this is optional now a days.
+.-> text/javascript -> its type of document.
+.-> document.write("Hello");-> this is a function of display data.
+.-> </script> -> closing tag

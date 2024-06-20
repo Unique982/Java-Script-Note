@@ -1,0 +1,6 @@
+// document.write()
+-> this function is used to write arbitrary HTML and content into
+page. if we use this function after an html document is fully loaded, will delete
+all existig HTML. It is used only for testing purpose.
+ex: document.write("Hello");
+document.write(variable);

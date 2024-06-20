@@ -1,0 +1,5 @@
+// Identifier
+-> An identifier is a name haveing a few letters, numbers and special characters _(underscore).
+It is used to identify variable, function,symbolic constant and so on.
+ex: 
+x2,PI,sigma,matadd

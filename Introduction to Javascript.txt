@@ -1,0 +1,18 @@
+// What is Javascript?
+-> Javascript is the programming language of HTML and the web.
+It markes web page dynamic. It is interpreted programming language with 
+object-orieted capabilities.
+//javascript History 
+-> 1995 by Brendan Eich (NetScape)
+-> Mocha 
+-> Live Script
+->Java Script 
+-> ECMAScript
+
+// Advantage and Disadvantage of JavaScript
+.-> Client Side Execution
+.-> Validation On Browser
+.-> Easy Language.
+// Disadvantage of JavaScript
+.-> Less Secure.
+.-> No Hardware Access.

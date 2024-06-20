@@ -1,0 +1,8 @@
+// Data type 
+-> In javascript we do not need to specify type of the variable 
+because it is dynamically used by javascript engine.
+-> we can use var data type. it can hold any type of data like string, number,Boolen etc.
+.1-> Primitive Data
+.-> string,Boolean,Number,undefined,Null.
+.2-> Non-Primitive Data
+.-> Object, array, RexExp
