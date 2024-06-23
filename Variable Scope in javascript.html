@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Scope</title>
+</head>
+<body>
+    <script>
+        // javascript has two scope
+        // 1. Gloabal 2. Local
+        function sum(b){
+        a = 20;// gloabal Variable
+        var c = 30; // local variable
+        return (a+b-c);
+    }
+    document.write(sum(20));
+    </script>
+</body>
+</html>
