@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passing Anonymous Function Argument</title>
+</head>
+<body>
+    <script>
+        // anonymous function allows the creation of function which have no specified name.
+        function dis(mycode){
+            return mycode();
+            
+        }
+        document.write(dis(function(){
+         return "passing anonymous function argument Example";
+        }));
+    </script>
+</body>
+</html>

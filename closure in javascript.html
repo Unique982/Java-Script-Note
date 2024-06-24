@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+        // A closure is a fucntion having access to the parent scope. it preserve the data form outside.
+        // A closure is an inner fucntion that has access to the outer (enclosing) function's variables.
+        // for every closure we have three scopes.
+        // 1. local scope (own scope) 2. outer function scope 3. Global scope
+
+        // example
+        var a = 10;
+        function x(){
+            var b = 60;
+            document.write(b +"<br>");
+            document.write(a +"<br>");
+
+        }
+        x();
+        // example 2 
+        function test(){
+        var c = "local variable outer function";
+        document.write(c +"<br>");
+        function inner(){
+            var d = "local variable inner fucntion";
+            document.write(d + "<br>");
+        }
+        inner();
+        }
+        
+        test();
+       
+    </script>
+</body>
+</html>
