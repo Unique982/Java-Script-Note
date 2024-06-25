@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        // arrow function example
+        var myshow =() =>{
+            document.write("hello");
+        };
+        myshow();
+        // arrow function with parameter
+        var mycode = (a,b) =>{
+            document.write(a+b);
+        };
+        mycode(50,70);
+        // Arrow function with default parameter
+        var mytest = (a, b=200) => {
+ document.write(a + "<br> " + b);
+        };
+        mytest(500);
+
+        // arrow function with rest 
+        var code = (a,...args) => {
+            document.write(a + "" + args)
+        };
+        code(100,300,500,700);
+    </script>
+</body>
+</html>
