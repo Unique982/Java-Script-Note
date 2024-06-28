@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // type of operator/
+        // example
+        function Mobile(model_no){
+            this.model = model_no;
+        }
+        var samsung = new Mobile('Galaxy');
+        var nokia = new Mobile ('3300');
+        if(typeof nokia. memory !== 'undefined'){
+            document.write("available");
+        }
+        else{
+            document.write("Doestn't exits");
+        }
+
+        // in Operator
+        function Mobile(model_no){
+            this.model = model_no;
+            this.memory = model_no;
+            this.memory = 4;
+        }
+        var samsung = new Mobile('Galaxy');
+        var nokia = new Mobile ('3300');
+        if('memory' in nokia ){
+            document.write("available");
+        }
+        else{
+            document.write("Doestn't exits");
+        }
+
+        // hasOwnProperty()
+        function Mobile(model_no){
+            this.model = model_no;
+            this.coloe = 'white';
+
+        }
+        var samsung = new Mobile('Galaxy');
+        var nokia = new Mobile ('3300');
+        if(nokia.hasOwnProperty('color')){
+            document.write("available");
+        }
+        else{
+            document.write("Doestn't exits");
+        }
+    </script>
+</body>
+</html>

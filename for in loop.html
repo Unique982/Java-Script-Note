@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In Loop</title>
+</head>
+<body>
+    <script>
+        function Mobile (model_no){
+            this.model = model_no;
+            this.color = 'white';
+            this.ram = '4GB';
+            this.price = function(){
+                document.write(this.model + "price Rs:3000 <br>");
+            }
+        }
+        var samsung = new Mobile('Galaxy');
+        var nokia = new Mobile('3330');
+        for (var spacs in nokia){
+            document.write(nokia[spacs]+ "<br>");
+        }
+    </script>
+</body>
+</html>
