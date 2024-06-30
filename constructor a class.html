@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <script>
+        var Mobile = function(model_no,sprice){
+            this.model = model_no;
+            this.color = 'black';
+            this.price = 500000;
+            this.sp = sprice;
+            this.sellingprice = function(){
+                return (this.price + this.sp);
+            };
+            this.data = function(){
+                document.write('model no:' + this.model +"price" + this.sellingprice());
+            }
+        };
+        var opps = new Mobile('OPPS',50000);
+        var samsung = new Mobile('3350',30000);
+        samsung.data();
+    </script>
+</body>
+</html>

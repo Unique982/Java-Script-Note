@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype in javascript</title>
+</head>
+<body>
+    <script>
+        var Mobile = function(model_no){
+            // instance member
+            this.model = model_no;
+            this.price = 40000;
+
+        };
+        var realme = new Mobile('realme');
+        var lg = new Mobile('2223');
+        //class name.prototype.key = 'vale';
+        // prototype member
+        Mobile.prototype.color ='red';
+        document.write(realme.color);
+        document.write(lg.color);
+   
+    </script>
+    
+</body>
+</html>
