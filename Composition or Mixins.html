@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composition or mixins</title>
+</head>
+<body>
+    <script>
+        var eating ={
+            eat: function(){
+                return "Ram can Eat <br> ";
+            }
+        };
+        var walking = {
+            walk: function(){
+                return "Ram can walk <br>";
+            }
+        };
+        var reading ={
+            read: function(){
+                return "Ram can read <br>";
+            }
+        };
+        var starting = {
+            start: function(){
+                return "Robot Stating.. <br>";
+            }
+        };
+        var stop = {
+            stop: function(){
+                return "Robot stop...<br>"
+            }
+        };
+        var Ram = Object.assign({},eating,walking,reading);
+        var Robot = Object.assign({}, walking,starting,stop);
+        document.write(Ram.eat());
+        document.write(Ram.walk());
+        document.write(Ram.read());
+        document.write(Robot.start());
+        document.write(Robot.stop());
+
+    </script>
+</body>
+</html>
