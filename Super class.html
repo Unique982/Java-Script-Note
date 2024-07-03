@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Class</title>
+</head>
+<body>
+    <script>
+        class Father{
+            constructor(loan){
+                this.Father = "Loan";
+                
+            }
+            FatherLoan(){
+                return this.Father + "Father Loan <br>";
+            }
+        }
+        class Son extends Father{
+            constructor(loan){
+                super(loan);
+            }
+            SonLoan(){
+                return "Son Loan <br>";
+            }
+        }
+        var s = new Son(1000000);
+        document.write(s.FatherLoan());
+        document.write(s.SonLoan());
+    </script>
+    
+</body>
+</html>

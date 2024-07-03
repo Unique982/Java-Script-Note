@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <script>
+        class Father{
+            FatherLoan(){
+                return 'Father Loan <br>';
+            }
+        }
+        class Son extends Father{
+            SonLoan(){
+                return 'Son loan <br>';
+            }
+        }
+        class GrandSon extends Son{
+            GrandLoan(){
+                return 'GrandSon Loan <br>';
+            }
+        }
+         var g = new GrandSon();
+         document.write(g.FatherLoan());
+         document.write(g.SonLoan());
+         document.write(g.GrandLoan());
+    </script>
+    
+</body>
+</html>
